@@ -1,0 +1,295 @@
+<main>
+  <div class="position-relative">
+    <!-- shape Hero -->
+    <section class="section section-lg section-shaped pb-250">
+      <div class="shape shape-style-1 shape-default">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="container py-lg-md d-flex">
+        <div class="col px-0">
+          <div class="row">
+              <h1 id="headline-52-42" class="ct-headline atomic-primary-heading">
+                <span id="span-606-42" class="ct-span">Improve your skills on your own
+                  To prepare for a better future.</span>
+              </h1>
+              <div id="text_block-390-42" class="ct-text-block">E-Learning Platform accélère la prise de conscience écologique pour réduire notre empreinte carbone dès maintenant.</div>
+
+
+              <div class="btn-wrapper col-lg-6 ">
+                <a routerLinkActive="active" [routerLink]="['/login']" class="btn btn-info btn-icon mb-3 mb-sm-0">
+                  <span class="btn-inner--icon"><i class="fa fa-connect"></i></span>
+                  <span class="btn-inner--text">AGIR MAINTENANT AVEC NOUS !</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </section>
+    <!-- 1st Hero Variation -->
+  </div>
+ <section>
+  <div>
+    <!-- Carousel wrapper -->
+<div
+id="carouselMultiItemExample"
+class="carousel slide carousel-dark text-center"
+data-mdb-ride="carousel"
+>
+<h2>Discover Our Cours</h2>
+<!-- Controls -->
+<div class="d-flex justify-content-center mb-4">
+  <button
+    class="carousel-control-prev position-relative"
+    type="button"
+    data-mdb-target="#carouselMultiItemExample"
+    data-mdb-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next position-relative"
+    type="button"
+    data-mdb-target="#carouselMultiItemExample"
+    data-mdb-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Inner -->
+<div class="carousel-inner py-4">
+  <!-- Single item -->
+  <div class="carousel-item active">
+    <div class="container">
+      <div class="row" >
+        <div class="col-lg-4 ">
+
+          <div class="card">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp"
+              class="card-img-top"
+              alt="Waterfall"
+            />
+            <div class="card-body" *ngFor="let courses1 of courses12">
+              
+              <h5 class="card-title">{{courses1.titre}}</h5>
+           
+
+              <p class="card-text">
+                {{courses1.description}}
+              </p>
+         
+
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="card">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp"
+              class="card-img-top"
+              alt="Sunset Over the Sea"
+            />
+            <div class="card-body">
+              <h5 class="card-title">nodJs</h5>
+              <p class="card-text">
+                250 DT/ Month
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="card">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/standard/nature/183.webp"
+              class="card-img-top"
+              alt="Sunset over the Sea"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Spring boot</h5>
+              <p class="card-text">
+                350 DT/ Month
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Single item -->
+  <!-- <div class="carousel-item">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12">
+          <div class="card">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
+              class="card-img-top"
+              alt="Fissure in Sandstone"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk
+                of the card's content.
+              </p>
+              <a href="#!" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="card">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/standard/nature/185.webp"
+              class="card-img-top"
+              alt="Storm Clouds"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk
+                of the card's content.
+              </p>
+              <a href="#!" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="card">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/standard/nature/186.webp"
+              class="card-img-top"
+              alt="Hot Air Balloons"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk
+                of the card's content.
+              </p>
+              <a href="#!" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Single item -->
+  
+</div>
+<!-- Inner -->
+</div>
+<!-- Carousel wrapper -->
+  </div>
+ </section>
+
+  <section class="section section-lg bg-gradient-default">
+    <div class="container pt-lg pb-300">
+      <div class="row text-center justify-content-center">
+        <div class="col-lg-10">
+          <h2 class="display-3 text-white shadow-text">Un impact positif sur la société et l’environnement</h2>
+          <p class="lead text-white">nos actions pour l’environnement. Elles soulignent notre mission d’entreprise, le bien-fondé de notre action écologique et la transparence de notre gouvernance.</p>
+        </div>
+      </div>
+      <div class="row row-grid mt-5">
+        <div class="col-lg-4">
+          <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+          </div>
+          <h5 class="text-white mt-3 shadow-text">Build Your Own Strategy </h5>
+          <p class="text-white mt-3">Les entreprises engagées dans l'informatique verte attirent souvent une clientèle consciente de l'environnement. 
+            Une réputation favorable en matière de durabilité peut stimuler la confiance des clients et les inciter à choisir votre entreprise..</p>
+        </div>
+        <div class="col-lg-4">
+          <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+            <i class="fa fa-building" aria-hidden="true"></i>
+          </div>
+          <h5 class="text-white mt-3 shadow-text">Grow Your healthy Business</h5>
+          <p class="text-white mt-3"> En investissant dans des technologies plus vertes, vous restez compétitif sur le marché en constante 
+            évolution. De plus, cela peut stimuler l'innovation au sein de votre entreprise en encourageant la recherche de solutions plus efficaces et respectueuses de l'environnement. .</p>
+        </div>
+        <div class="col-lg-4">
+          <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+            <i class="fa fa-briefcase" aria-hidden="true"></i>
+          </div>
+          <h5 class="text-white mt-3 shadow-text">Upgrade Your Global Potential </h5>
+          <p class="text-white mt-3">L'adoption de pratiques d'informatique verte peut permettre à votre entreprise de réaliser des économies 
+            significatives à long terme. Des serveurs écoénergétiques, des dispositifs de refroidissement efficaces et une gestion intelligente 
+            de l'énergie réduiront les coûts d'exploitation.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- SVG separator -->
+    <div class="separator separator-bottom separator-skew zindex-100">
+      <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div>
+  </section>
+
+  <section class="section section-lg pt-lg-0 section-contact-us">
+    <div class="container">
+      <div class="row justify-content-center mt--300">
+        <div class="col-lg-8">
+          <div class="card bg-gradient-secondary shadow">
+            <div class="card-body p-lg-5">
+              <h4 class="mb-1 shadow-text">Voulez-vous tavailler avec nous  ?</h4>
+              <p class="mt-0">Avez-vous un projet avec nous.Soyez le Bienvenue.</p>
+              <form (ngSubmit)="saveMessage()">
+              <div class="form-group mt-5" [ngClass]="{'focused':focus===true}">
+                <div class="input-group input-group-alternative">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+                  </div>
+                  <input class="form-control" placeholder="votre nom" type="text" (focus)="focus=true" (blur)="focus=false"[(ngModel)]="Message.nom">
+                </div>
+              </div>
+              <div class="form-group" [ngClass]="{'focused':focus1===true}">
+                <div class="input-group input-group-alternative">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    
+                    </span>
+                  </div>
+                  <input class="form-control" placeholder=" votre addresse email" type="email" (focus)="focus1=true" (blur)="focus1=false"[(ngModel)]="Message.email">
+                </div>
+              </div>
+              <div class="form-group mb-4">
+                <textarea class="form-control form-control-alternative" name="name" rows="4" cols="80" placeholder="votre message..."  [(ngModel)]="Message.msg"></textarea>
+              </div>
+           
+              <div>
+                <button type="submit" class="btn btn-default btn-round btn-block btn-lg">Envoyez  Message</button>
+              </div>
+            
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  
+</main>

@@ -1,0 +1,71 @@
+<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
+  <div class="container">
+    <div class="logo">
+      <a  class="simple-text navbar-brand mr-lg-5 " [routerLink]="['/landing']">
+          <div class="logo-img">
+              <img src="../../../assets/images/logonav.png" >
+          </div>
+      </a>
+    </div>
+        
+    
+    <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed"  *ngIf="!isconn ; else inconn">
+      
+      <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+        <li class="nav-item dropdown">
+          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+            <i class="fa fa-plug" aria-hidden="true"></i>
+            <span class="nav-link-inner--text text-black">S'inscrire </span>
+          </a>
+          <div class="dropdown-menu-xl dropdown-menu" >
+            <div class="dropdown-menu-inner">
+            
+              <a routerLinkActive="active" [routerLink]="['//register']" class="media d-flex align-items-center">
+                <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
+                  <i class="fa fa-briefcase" aria-hidden="true"></i>
+                </div>
+                <div class="media-body ml-3">
+                  <h6 class="heading text-primary mb-md-1">Regider </h6>
+                  <p class="description d-none d-md-inline-block mb-0">Epace user.</p>
+                </div>
+              </a>
+              
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link no-caret" data-toggle="dropdown" role="button" routerLinkActive="active" [routerLink]="['/signin']">
+            <i class="fa fa-plug" aria-hidden="true"></i>
+            <span class="nav-link-inner--text text-black">Se Connecter </span>
+          </a>
+        </li>
+
+       
+       
+      </ul>
+      
+       
+      
+    </div>
+<ng-template #inconn>
+    <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed" >
+      
+      <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+        <li class="nav-item dropdown">
+          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+            <i class="fa fa-plug" aria-hidden="true"></i>
+            <span class="nav-link-inner--text text-black"(click)="signout()">déconnecter </span>
+          </a>
+         
+        </li>
+       
+        
+      </ul>
+    
+       
+      
+    </div>
+  </ng-template>
+  </div>
+</nav>
+  
